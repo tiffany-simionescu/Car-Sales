@@ -1,9 +1,18 @@
 import React from 'react';
 
+// Components
 import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
+
+// Reducers
+import { featureReducer } from './reducers';
+
+// Redux Store
+import { createStore } from 'redux';
+
+export const store = createStore(featureReducer);
 
 const App = () => {
   const state = {
