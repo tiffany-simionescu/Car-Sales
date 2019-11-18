@@ -1,0 +1,1 @@
+export { featureReducer } from './featureReducer';
